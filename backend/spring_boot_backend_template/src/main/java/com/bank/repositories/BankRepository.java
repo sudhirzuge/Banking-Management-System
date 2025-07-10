@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import com.bank.dtos.BankDataResponseDto;
 import com.bank.entities.Bank;
 
 public interface BankRepository extends JpaRepository<Bank, Long> {
