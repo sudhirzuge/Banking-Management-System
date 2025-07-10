@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class BankAccountrespDto {
+public class BankAccountRespDto {
 
 	private String customerName;
 	private String bankName;
@@ -22,7 +22,7 @@ public class BankAccountrespDto {
 	private BigDecimal balance;
 	private LocalDateTime createdOn;
 	
-	public BankAccountrespDto(String customerName, String bankName, Long accountId, String ifscCode, String accountType,
+	public BankAccountRespDto(String customerName, String bankName, Long accountId, String ifscCode, String accountType,
 			String status, String customerEmail, LocalDateTime createdOn) {
 		super();
 		this.customerName = customerName;
@@ -35,7 +35,7 @@ public class BankAccountrespDto {
 		this.createdOn = createdOn;
 	}
 	
-	public BankAccountrespDto(String customerName, String bankName, Long accountId, String ifscCode, String accountType,
+	public BankAccountRespDto(String customerName, String bankName, Long accountId, String ifscCode, String accountType,
 			String status, String customerEmail, BigDecimal balance, LocalDateTime createdOn) {
 		super();
 		this.customerName = customerName;
