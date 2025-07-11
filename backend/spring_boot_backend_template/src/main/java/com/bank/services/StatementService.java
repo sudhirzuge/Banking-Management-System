@@ -5,5 +5,5 @@ import com.bank.dtos.StatementReqDto;
 
 public interface StatementService {
 
-	ApiResponse saveStatementRecord(StatementReqDto statement);
+	ApiResponse saveStatementRecord(StatementReqDto statementDto);
 }

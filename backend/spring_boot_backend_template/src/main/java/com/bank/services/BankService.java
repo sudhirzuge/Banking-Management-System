@@ -13,9 +13,9 @@ public interface BankService {
 	
 	List<AllCustomersRespDto> viewAllBankCustomers(Long bankManagerId);
 
-	ApiResponse makeInActive(Long customerId);
+	ApiResponse makeInActive(Long userId);
 	
-	ApiResponse makeActive(Long customerId);
+	ApiResponse makeActive(Long userId);
 	
 	List<TransactionResponseDto> getAllTransactionsForBank(Long managerId);
 }

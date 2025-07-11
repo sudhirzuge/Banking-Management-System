@@ -10,7 +10,7 @@ public interface CustomerService {
 
 	public CustomerProfileRespDto getCustomerDetails(Long customerId);
 	
-	public List<TransactionResponseDto> getAllTransactions(Long customerId);
+	public List<TransactionResponseDto> getAllTransactions(Long accountId);
 	
 	public List<TransactionResponseDto> getAllTransactionsForCustomer(Long customerId);
 	
