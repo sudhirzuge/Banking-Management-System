@@ -47,6 +47,12 @@ public class GlobalExceptionHandler {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 	}
 	
+	public ResponseEntity<Map<String, String>> handleInvalidAmountException(InvalidAmountException ex){
+		Map<String, String> response = new HashMap<>();
+		response.put("error", "entered amount is less than zero"+ex.getMessage());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+	}
+	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<Map<String, String>> handleGenericException(Exception ex){
 		Map<String, String> response = new HashMap<>();
